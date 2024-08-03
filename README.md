@@ -4,4 +4,4 @@ In this assignment, I read data from an AWS S3 bucket and stored it in a tempora
 
 Next, the data was partitioned by the date_built column, stored in parquet format, and loaded into a temporary table. I measured and compared the query run time to that of the cached data.
 
-When comparing parquet and cache run times, the parquet run times were lower. This improvement is likely due to the partitioning of the parquet data, which enhances query execution speed.
+When comparing parquet and cache run times, the cache run times were lower. When comparing the parquet and uncache run times, the parquet run times were lower. 
